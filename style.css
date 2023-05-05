@@ -36,21 +36,32 @@ body {
 }
 
 /*Center nav keeps the home about.. tab in the middle*/
-.center-nav {
+.centered-nav {
     display: flex;
     justify-content: center;
-  }
+    align-items: center;
+}
+
   
-  .center-nav ul {
+.centered-nav ul {
     display: flex;
-    justify-content: space-between;
     list-style: none;
+    margin: 0;
     padding: 0;
-  }
+}
   
   .center-nav li {
     margin: 0 10px;
   }
+
+  .centered-nav a {
+    text-decoration: none;
+    color: #fff; /* Adjust the color as needed */
+}
+
+.centered-nav a:hover {
+    color: #666; /* Adjust the hover color as needed */
+}
 
   .header-content {
     min-height: 28vh;
