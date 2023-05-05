@@ -283,6 +283,12 @@ nav ul li a:hover::after{
     font-size: 40px;
     font-weight: 600;
     color: #465826;
+}
+
+.sub-title1 {
+    font-size: 40px;
+    font-weight: 600;
+    color: #465826;
     text-align: center;
 }
 
