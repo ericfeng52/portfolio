@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Eric Feng | SWE</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header id="header">
+            <div class = "header-content">
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <!--<img src="images/logo.png" class="logo">-->
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#resume">Resume</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-text-container">
+                    <span class="header-text-item">Hi,&nbsp;I'm <span class="highlight">Eric</span></span>
+                    <span class="header-text-item">Hola,&nbsp;me&nbsp;llamo <span class="highlight">Eric</span></span>
+                    <span class="header-text-item">
+                        <span class="chinese-greeting">您&nbsp;好,&nbsp;我&nbsp;是&nbsp;&nbsp;</span>
+                        <span class="highlight">冯&nbsp;英&nbsp;乔</span>
+                    </span>
+                </div>               
+            </div>
+        </div>
+        </div>
+        </header>
+
+        <!-- About -->
+        <section id="about">
+        <div id="about"> 
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img id="headshot" src="picOfMe.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p><br>My name is Eric and I'm a junior studying Computer Science at the University of Maryland. 
+                            I strive to become the best and most well rounded person I can be, and as of right now, I'm
+                            focusing on developing better interpersonal skills and software engineering skills.  Outside
+                            of my work life, I enjoy going to the gym and the arts.  I love music of all genres, especially 
+                            older rock which I can play on my stratocaster.  You can also find some of my recent
+                            favoirite songs below.<br>
+                        </p>
+
+                        <br>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience & Projects</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Software Development</span><br>Java, Python, C, Ocaml, Ruby, Rust, Swift</li>
+                                <li><span>Web Development</span><br>JavaScript, HTML, CSS, React, AngularJS</li>
+                                <!--<li><span>App Development</span><br>Swift</li>-->
+                                <li><span>CS Related</span><br>Algorithm analysis, Unix, OOP, Functional programming, Low-level rogramming, Assembly</li>
+                                <li><span>Personal</span><br>Critical thinking, Analytical/problem-solving skills, Communication, Teamwork</li>
+                                <li><span>Languages</span><br>English, Mandarin Chinese, Spanish</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Mobile Development Intern (National Institute of Health)</span><br>Developed a 2D educational game for iOS devices that taught users about environmental health and toxicology using Swift.  Done with a 3 person team to implement physics (how sprites would collide and interact) and graphics of the game</li>
+                                <li><span>Unix Simulator, C</span><br>Simulated the Unix system in C where there existed a root directory, additional directories and files which users could add/modify, and functions such as getting the path from the current directory to root</li>
+                                <li><span>Six Degrees of Kevin Bacon, Java</span><br>Simulated a web of profiles on social media using graphs in Java.  Added additional functions such as finding a user's first connections and finding the smallest degree of seperation betwen two users </li>
+                                <li><span>Regular Expression Engine, OCaml</span><br>Converted between regular expressions, NFA (Nondeterministic Finite Automaton) and DFA (Deterministic Finite Automaton).  Implemented algorithms such as testing if a string is accepted by RegEx, NFA, and DFA</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>University of Maryland, College Park</span><br>
+                                Bachelors of Computer Science, August 2020 - May 2024 (In Progress)</li>
+                                <li><span>Coursework</span><br>
+                                    <ul>
+                                        <li>Object Oriented Programming</li>
+                                        <li>Analysis of Algorithms</li>
+                                        <li>Web Application Development with JavaScript</li>
+                                        <li>Introduction to Computer Systems</li>
+                                        <li>Discrete Structures</li>
+                                        <li>Organization of Programming Languages</li>
+                                        <li>Introduction to Data Science</li>
+                                        <li>Advanced Data Structures</li>
+                                      </ul>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <br><br>
+                <!-- Music Section -->
+                <div id="music-section">
+
+                    <div class="music-container">
+                        <button class="music-nav-btn" id="music-prev" onclick="changeSong(-1)">&lt;</button>
+                        <div class="music-item" id="music-item-1">
+                            <div class="music-item">
+                                <a href="https://open.spotify.com/track/4mL59LVbKgOpEACxraGYdr?si=cd706876418f4c89" target="_blank">
+                                    <img src="songCover.jpeg" alt="Album Cover 1">
+                                </a>
+                                <div class="music-description">
+                                    <h2>While We're Young</h2>
+                                    <p>Jhené Aiko</p>
+                                    <!--<p>Trip</p>-->
+                                </div>
+                            </div>                        </div>
+                        <div class="music-item" id="music-item-2" style="display:none;">
+                            <div class="music-item">
+                                <a href="https://open.spotify.com/track/6mFkJmJqdDVQ1REhVfGgd1?si=ef9c1e47fa644826" target="_blank">
+                                    <img src="songCover2.jpeg" alt="Album Cover 1">
+                                </a>
+                                <div class="music-description">
+                                    <h2>Wish You Were Here</h2>
+                                    <p>Pink Floyd</p>
+                                    <!--<p>Trip</p>-->
+                                </div>
+                            </div>                        </div>
+                        <div class="music-item" id="music-item-3" style="display:none;">
+                            <div class="music-item">
+                                <a href="https://open.spotify.com/track/2uuJs2nltcYFh9pkKP7bW4?si=8801ff300b814051" target="_blank">
+                                    <img src="songCover3.jpeg" alt="Album Cover 1">
+                                </a>
+                                <div class="music-description">
+                                    <h2>Show Me</h2>
+                                    <p>Joey Bada$$</p>
+                                    <!--<p>Trip</p>-->
+                                </div>
+                            </div>                        </div>
+                        <button class="music-nav-btn" id="music-next" onclick="changeSong(1)">&gt;</button>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+        </section>
+
+        <!-- Services
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <h2>Software Engineering</h2>
+                        <p>DESCRIPTION</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    -->
+
+        <!-- Resume -->
+        <section id="resume">
+        <div id="resume">
+            <div class="container">
+                <h1 class="sub-title">Resume</h1>
+                
+                <div class="resumeDescription">
+                    <p>
+                        You can find a copy of my resume <a href="resumeresume.pdf" target="_blank">here</a>.  I also
+                        included some information about my favorite project below.
+                    </p>
+                </div>
+
+                <div class="resumeProjects">
+                    <p>
+                        <a href="moneyball.pdf" target="_blank">Moneyball</a> -   This one is for the sports fans.
+                        In this project, I pulled historical Major League Baseball data from a database.  I then cleaned
+                        the data up and analyzed trends such as which team(s) were able to perform well
+                        while spending less on players.
+                    </p>
+                    <br><br>
+                    <img id="moneyBall" src="moneyball2.png">
+                    <br>
+                    <img id="moneyBall2" src="moneyball1.png">
+
+                </div>
+
+            </div>
+        </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact">
+        <div id="contact">
+            <div class="container">
+                <h1 class="sub-title">Contact</h1>
+
+                <div class="contact-links">
+                    <a href="https://www.linkedin.com/in/feng-eric/" target="_blank" class="linkedin-link"></a>
+                    <a href="https://github.com/ericfeng52" target="_blank" class="github-link"></a>
+                    <a href="mailto:ericfeng52@gmail.com" target="_blank" class="email-link"></a>
+                </div>
+                
+
+            </div>
+        </div>
+        </section>
+
+        <script>
+            
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname) {
+
+                for(tablink of tablinks) {
+                    tablink.classList.remove("active-link");
+                }
+
+                for(tabcontent of tabcontents) {
+                    tabcontent.classList.remove("active-tab");
+                }
+
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+
+            }
+
+            let currentSong = 1;
+
+            function changeSong(direction) {
+                document.getElementById(`music-item-${currentSong}`).style.display = "none";
+                currentSong += direction;
+
+                if (currentSong > 3) {
+                    currentSong = 1;
+                } else if (currentSong < 1) {
+                    currentSong = 3;
+                }
+
+                document.getElementById(`music-item-${currentSong}`).style.display = "block";
+            }
+
+        </script>
+
+        <section class="footer">
+            <div class="container">
+                <hr>
+                <p>@2023 Eric Feng</p>
+            </div>
+        </section>
+
+    </body>
+
+</html>
