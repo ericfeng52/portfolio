@@ -133,6 +133,17 @@ body {
     padding: 20px 10%;
 }
 
+/* Desktop view - Default */
+.navbar-spacing {
+    margin: 0 30px;
+  }
+  
+  /* Mobile view */
+  @media (max-width: 768px) {
+    .navbar-spacing {
+      margin: 0 10px;
+    }
+  }
 
 nav {
     display: flex;
