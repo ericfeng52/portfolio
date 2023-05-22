@@ -21,7 +21,7 @@ html {
   }
 
 body {
-    background: #c3ad86;
+    background: #a39171;
     color: #fff;
 }
 
@@ -210,7 +210,7 @@ nav ul li a:hover::after{
 /* Music Section */
 
 #music-section {
-    padding: 0px 0;
+    padding: 80px 0;
 }
 
 /* Modify the existing .music-container rule */
