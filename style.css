@@ -20,6 +20,52 @@ html {
     font-display: swap; /* Use 'swap' for better performance */
   }
 
+  /*Buttons*/
+  .floating-buttons {
+    position: fixed;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 999;
+    margin-bottom: 10px;
+    width: 100%; /* Add this line */
+}
+
+.floating-buttons .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 0; /* Change border-radius to 0 */
+    background-color: #1d1d1d;
+    margin-bottom: 25px; /* Updated margin-bottom value */
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+
+.floating-buttons .button:hover {
+    width: 220px;
+    background-color: #1d1d1d;
+    opacity: 1;
+}
+
+.floating-buttons .button:hover .button-label {
+    display: inline;
+}
+
+.floating-buttons .button .button-icon {
+    color: #fff;
+}
+
+.floating-buttons .button .button-label {
+    display: none;
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+}
+
 body {
     background: #a39171;
     color: #fff;
