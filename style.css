@@ -24,7 +24,7 @@ html {
   .floating-buttons {
     position: fixed;
     left: 0px;
-    top: 50%;
+    top: 80%;
     transform: translateY(-50%);
     z-index: 999;
     margin-bottom: 10px;
@@ -39,7 +39,7 @@ html {
     height: 60px;
     border-radius: 0; /* Change border-radius to 0 */
     background-color: #1d1d1d;
-    margin-bottom: 25px; /* Updated margin-bottom value */
+    margin-bottom: 10px; /* Updated margin-bottom value */
     opacity: 0.8;
     transition: all 0.3s ease;
 }
