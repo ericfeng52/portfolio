@@ -325,6 +325,7 @@ nav ul li a:hover::after{
 
 
 #headshot {
+    margin: 30px;
     width: 25rem;
     height: 34rem;
 }
@@ -575,14 +576,13 @@ nav ul {
 /*PANELS*/
   
 .aboutpanel {
-    position: absolute;
-    top: 20px;
-    left: 50px;
-    bottom: 500px;
-    right: 30px;
-    background-color: #918061; /* Adjust the color as desired */
-    border-radius: 10px; /* Adjust the border radius as desired */
+    position: relative;
     z-index: -1;
+    background-color: #918061;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    display: flex;
 }
 
 .musicpanel {
