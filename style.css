@@ -283,7 +283,6 @@ nav ul li a:hover::after{
     margin-right: 20px; /* Add this line */
 }
 
-
 .music-item img {
     width: 15rem;
     height: 15rem;
@@ -569,3 +568,53 @@ nav ul {
     font-size: 14px;
     color: #465826;
 }
+
+/*PANELS*/
+/* Add brown panels */
+.panel {
+    background-color: #8B4513;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  /* Adjust the size of the panels */
+  .picture-section .panel,
+  #about .panel,
+  #music-section .panel,
+  #resume .panel,
+  #contact .panel {
+    padding: 40px;
+    margin-bottom: 40px;
+  }
+  
+  /* Adjust the color of the text inside the panels */
+  .panel h2,
+  .panel p {
+    color: #fff;
+  }
+  
+  /* Apply brown panels to the picture section */
+  .picture-section .panel {
+    /* Add custom styles for the picture section panel */
+  }
+  
+  /* Apply brown panels to the about section */
+  #about .panel {
+    /* Add custom styles for the about section panel */
+  }
+  
+  /* Apply brown panels to the music section */
+  #music-section .panel {
+    /* Add custom styles for the music section panel */
+  }
+  
+  /* Apply brown panels to the resume section */
+  #resume .panel {
+    /* Add custom styles for the resume section panel */
+  }
+  
+  /* Apply brown panels to the contact section */
+  #contact .panel {
+    /* Add custom styles for the contact section panel */
+  }
+  
