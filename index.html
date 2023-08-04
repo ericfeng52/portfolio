@@ -61,28 +61,39 @@
         <div id="about"> 
             <div class="container">
                 <div class="row">
-                    <div class="aboutpanel">
                     <div class="about-col-1">
                         <br><br>
                         <img id="headshot" src="picOfMe.jpg">
                     </div>
                     <div class="about-col-2">
                         <h1 class="sub-title">About Me</h1>
-                        <p><br>Welcome to my page. My name is Eric and I'm a junior studying Computer Science at the University of Maryland. 
-                            I strive to become the best and most well rounded person I can be, and as of right now, I'm
-                            focusing on developing better interpersonal skills and software engineering skills.  Outside
-                            of my work life, I enjoy going to the gym and the arts.  I love music of all genres, especially 
+                        <p><br>Welcome to my page. My name is Eric and I'm a senior studying CS at the University of Maryland. 
+                            One of my current goals is to be as well rounded as I can.  I work to be a better thinker and engineer, and outside
+                            of my work, I enjoy going to the gym and the arts.  I love music specifically, especially 
                             older rock which I can play on my stratocaster.  You can also find some of my recent
-                            favoirite songs below.<br>
+                            favoirite songs below.<br><br>
                         </p>
+
                         <br>
 
                         <div class="tab-titles">
-                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                            <p class="tab-links" onclick="opentab('experience')">Experience & Projects</p>
+                            <p class="tab-links active-link" onclick="opentab('experience')">Experience & Projects</p>
+                            <p class="tab-links" onclick="opentab('skills')">Skills</p>
                             <p class="tab-links" onclick="opentab('education')">Education</p>
                         </div>
-                        <div class="tab-contents active-tab" id="skills">
+                        <div class="tab-contents  active-tab" id="experience">
+                            <ul>
+                                <li><span>Package Systems Developer Intern</span><br>Worked on Amertias’s IT team to implement a new system for organizing and arranging healthcare data in an Agile environment,
+                                    developed and debugged software in a codebase utilizing APIs from Firelight,
+                                    resolved high and medium-priority JIRA tickets while communicating progress and issues with other teams such as QA,
+                                    experienced the development lifecycle in a Scrum workflow
+                                    </li>
+                                <li><span>Mobile Development Intern (National Institute of Health)</span><br>Developed a 2D educational game for iOS devices that taught users about environmental health and toxicology using Swift.  Done with a 3 person team to implement physics (how sprites would collide and interact) and graphics of the game</li>
+                                <li><span>Unix Simulator, C</span><br>Simulated the Unix system in C where there existed a root directory, additional directories and files which users could add/modify, and functions such as getting the path from the current directory to root</li>
+                                <li><span>Regular Expression Engine, OCaml</span><br>Converted between regular expressions, NFA (Nondeterministic Finite Automaton) and DFA (Deterministic Finite Automaton).  Implemented algorithms such as testing if a string is accepted by RegEx, NFA, and DFA</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="skills">
                             <ul>
                                 <li><span>Software Development</span><br>Java, Python, C, Ocaml, Ruby, Rust, Swift</li>
                                 <li><span>Web Development</span><br>JavaScript, HTML, CSS, React, AngularJS</li>
@@ -90,14 +101,6 @@
                                 <li><span>CS Related</span><br>Algorithm analysis, Unix, OOP, Functional programming, Low-level rogramming, Assembly</li>
                                 <li><span>Personal</span><br>Critical thinking, Analytical/problem-solving skills, Communication, Teamwork</li>
                                 <li><span>Languages</span><br>English, Mandarin Chinese, Spanish</li>
-                            </ul>
-                        </div>
-                        <div class="tab-contents" id="experience">
-                            <ul>
-                                <li><span>Mobile Development Intern (National Institute of Health)</span><br>Developed a 2D educational game for iOS devices that taught users about environmental health and toxicology using Swift.  Done with a 3 person team to implement physics (how sprites would collide and interact) and graphics of the game</li>
-                                <li><span>Unix Simulator, C</span><br>Simulated the Unix system in C where there existed a root directory, additional directories and files which users could add/modify, and functions such as getting the path from the current directory to root</li>
-                                <li><span>Six Degrees of Kevin Bacon, Java</span><br>Simulated a web of profiles on social media using graphs in Java.  Added additional functions such as finding a user's first connections and finding the smallest degree of seperation betwen two users </li>
-                                <li><span>Regular Expression Engine, OCaml</span><br>Converted between regular expressions, NFA (Nondeterministic Finite Automaton) and DFA (Deterministic Finite Automaton).  Implemented algorithms such as testing if a string is accepted by RegEx, NFA, and DFA</li>
                             </ul>
                         </div>
                         <div class="tab-contents" id="education">
@@ -121,12 +124,11 @@
                         </div>
                     </div>
                 </div>
-                </div>
 
                 <br><br>
                 <!-- Music Section -->
                 <div id="music-section">
-                    <div class="musicpanel">
+
                     <div class="music-container">
                         <button class="music-nav-btn" id="music-prev" onclick="changeSong(-1)">&lt;</button>
                         <div class="music-item" id="music-item-1">
@@ -164,11 +166,26 @@
                             </div>                        </div>
                         <button class="music-nav-btn" id="music-next" onclick="changeSong(1)">&gt;</button>
                     </div>
+                </div>
+
+                
+            </div>
+        </div>
+        </section>
+
+        <!-- Services
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <h2>Software Engineering</h2>
+                        <p>DESCRIPTION</p>
                     </div>
                 </div>
             </div>
         </div>
-        </section>
+    -->
 
 <!-- Resume -->
 <section id="resume">
@@ -188,7 +205,6 @@
             </div>
 
             <div class="resumeProjects">
-                <br>
                 <p>
                     <a href="moneyball.pdf" target="_blank">Moneyball</a> -   This one is for the sports fans.
                     In this project, I pulled historical Major League Baseball data from a database.  I then cleaned
@@ -208,7 +224,7 @@
 
 
         <!-- Contact -->
-        <section id="contact">
+        <!--<section id="contact">
         <div id="contact">
             <div class="container">
                 <h1 class="sub-title1">Contact</h1>
@@ -222,7 +238,7 @@
 
             </div>
         </div>
-        </section>
+        </section>-->
 
         <script>
             

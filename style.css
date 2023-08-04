@@ -55,7 +55,7 @@ html {
 }
 
 .floating-buttons .button .button-icon {
-    color: #fff;
+    color: #ebebe2;
 }
 
 .floating-buttons .button .button-label {
@@ -63,22 +63,22 @@ html {
     margin-left: 10px;
     font-size: 14px;
     font-weight: bold;
-    color: #fff;
+    color: #ebebe2;
 }
 
 body {
     background: #a39171;
-    color: #fff;
+    color: #ebebe2;
 }
 
 #header {
     width: 100%;
-    min-height: 30vh;
+    min-height: 30vh; /* Change height to min-height */
     background-size: cover;
     background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: flex; /* Add this line */
+    flex-direction: column; /* Add this line */
+    justify-content: center; /* Add this line */
 }
 
 /*Center nav keeps the home about.. tab in the middle*/
@@ -102,7 +102,7 @@ body {
 
   .centered-nav a {
     text-decoration: none;
-    color: #fff; /* Adjust the color as needed */
+    color: #ebebe2; /* Adjust the color as needed */
 }
 
 .centered-nav a:hover {
@@ -210,7 +210,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #ebebe2;
     text-decoration: none;
     font-size: 18px;
     position: relative;
@@ -248,9 +248,8 @@ nav ul li a:hover::after{
 /* About */
 
 #about {
-    padding: 20px;
-    color: #fff;
-    position: relative;
+    padding: 0px;
+    color: #ebebe2;
 }
 
 
@@ -258,8 +257,6 @@ nav ul li a:hover::after{
 
 #music-section {
     padding: 80px 0;
-    position: relative;
-    z-index: 0;
 }
 
 /* Modify the existing .music-container rule */
@@ -312,7 +309,7 @@ nav ul li a:hover::after{
 .music-nav-btn {
     background: none;
     border: none;
-    color: #fff;
+    color: #ebebe2;
     font-size: 3rem;
     cursor: pointer;
     margin: 0 20px;
@@ -325,7 +322,6 @@ nav ul li a:hover::after{
 
 
 #headshot {
-    margin: 30px;
     width: 25rem;
     height: 34rem;
 }
@@ -388,7 +384,7 @@ nav ul li a:hover::after{
 }
 
 .tab-links.active-link::after {
-    width: 50%;
+    width: 100%;
 }
 
 .tab-contents ul li{
@@ -430,14 +426,14 @@ nav ul li a:hover::after{
 }
 
 .resumeDescription {
-    color: #fff;
-    font-size: 1.2rem;
+    color: #ebebe2;
+    font-size: 1.5rem;
     line-height: 1.5;
     margin: 1rem 0;
 }
 
 .resumeProjects {
-    color: #fff;
+    color: #ebebe2;
     font-size: 1rem;
     line-height: 1.5;
     margin: 1rem 0;
@@ -574,28 +570,51 @@ nav ul {
 }
 
 /*PANELS*/
-  
-.aboutpanel {
-    position: relative;
-    z-index: -1;
-    background-color: #918061;
-    border-radius: 10px;
+/* Add brown panels */
+.panel {
+    background-color: #8B4513;
     padding: 20px;
-    margin: 20px 0;
-    display: flex;
-}
-
-.musicpanel {
-    position: relative;
-    z-index: -1;
-    background-color: #918061;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 20px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-bottom: 20px;
   }
-
-
-
+  
+  /* Adjust the size of the panels */
+  .picture-section .panel,
+  #about .panel,
+  #music-section .panel,
+  #resume .panel,
+  #contact .panel {
+    padding: 40px;
+    margin-bottom: 40px;
+  }
+  
+  /* Adjust the color of the text inside the panels */
+  .panel h2,
+  .panel p {
+    color: #ebebe2;
+  }
+  
+  /* Apply brown panels to the picture section */
+  .picture-section .panel {
+    /* Add custom styles for the picture section panel */
+  }
+  
+  /* Apply brown panels to the about section */
+  #about .panel {
+    /* Add custom styles for the about section panel */
+  }
+  
+  /* Apply brown panels to the music section */
+  #music-section .panel {
+    /* Add custom styles for the music section panel */
+  }
+  
+  /* Apply brown panels to the resume section */
+  #resume .panel {
+    /* Add custom styles for the resume section panel */
+  }
+  
+  /* Apply brown panels to the contact section */
+  #contact .panel {
+    /* Add custom styles for the contact section panel */
+  }
+  
